@@ -1,15 +1,23 @@
 # java-basic
 
+## Docker
 
-## Build the Java Source
+```
+docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp openjdk:8 javac -d ./dist/ src/App.java
+docker run -v "$PWD":/usr/src/myapp -w /usr/src/myapp openjdk:8 java -cp dist App
+```
+
+## Locally
+
+### Build the Java Source
 
 `javac -d ./dist/ src/App.java`
 
-## Make a jar
+### Make a jar
 
 `jar -cf dist/App.jar dist/App.class`
 
-## Run the Java Classes
+### Run the Java Classes
 
 `java -cp dist App`
 
