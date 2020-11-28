@@ -2,9 +2,9 @@
 
 ## Docker
 
-```
+```bash
 docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp openjdk:8 javac -d ./dist/ src/App.java
-docker run -v "$PWD":/usr/src/myapp -w /usr/src/myapp openjdk:8 java -cp dist App
+docker run -it -v "$PWD":/usr/src/myapp -w /usr/src/myapp openjdk:8 java -cp dist App
 ```
 
 ## Locally
